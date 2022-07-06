@@ -5,102 +5,124 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Lacteos tigre-Distribuidora y Autoservicio</title>
 	<link rel="shortcut icon" href="../img/favicon.png">
-			<!--mi css externo-->
-	<link rel="stylesheet" href="../Styles/style.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
-</head>
+    <!--CSS BOOTSTRAP-->
+  <link rel="stylesheet" href="../style css/style-bootstrap.css">
 
-<body>
-	<div class="contenedor">
+ </head>
+     <body>
 
-	<nav id="nav">
-		<div>
-			<a href="../index.html">
-			<img src="../img/logo-v2.png" alt="logo de Lacteos tigre-Distribuidora y Autoservicio">
-			</a>
-		</div>
+      <!-- inicia nav -->
 
-		<h1>Lacteos Tigre</h1>
-		<ul>
-            <li>	
-				<a href="../index.html" class="animate">Inicio</a>
-			</li>
-			<li>	
-				<a href="../Ofertas/Ofertas.html" class="animate">Ofertas</a>
-			</li>
-			<li>
-				<a href="../Nosotros/Nosotros.html" class="animate">Nosotros</a>
-			</li>
-			<li>
-				<a href="../Contacto/Contacto.html" class="animate">Contacto</a>
-			</li>
-			<li>
-				<a href="../Sucursales/Sucursales.html" class="animate">Sucursales</a>
-			</li>
-		</ul>
-		</nav>
+      <nav class="navbar navbar-expand-md navbar-light bg-light">
+        <div class="container-fluid">
 
-	<h2>OFERTAS DE JUNIO</h2>
-<main id="main">
-	<div class="ofertas-semana" >
-		<ul class="lista-stilo">
-			<li> 
-				<a href="../Ofertas/Ofertas.html">Ofertas I </a>
-			</li>
-			<li> 
-				<a href="../Ofertas/Ofertas.html">Ofertas II </a>
-			</li>
-			<li> 
-				<a href="../Ofertas/Ofertas.html">Ofertas III </a>
-			</li>
-			<li> 
-				<a href="../Ofertas/Ofertas.html">Ofertas IV </a>
-			</li>
-			<li> 
-				<a href="../Ofertas/Ofertas.html">Ofertas V </a>
-			</li>
-			<li> 
-				<a href="../Ofertas/Ofertas.html">Ofertas VI </a>
-			</li>
-			<li> 
-				<a href="../Ofertas/Ofertas.html">Ofertas VII </a>
-			</li>
-			<li> 
-				<a href="../Ofertas/Ofertas.html">Ofertas VIII </a>
-			</li>
-			<li> 
-				<a href="../Ofertas/Ofertas.html">Ofertas IX </a>
-			</li>
-			<li> 
-				<a href="../Ofertas/Ofertas.html">Ofertas X </a>
-			</li>
-		</ul>
-	</div>
-</main>
+        <a href="../index.html">
+        <img class="mx-3 m" src="../img/logo-v2.png" alt="logo compania"></a>
+          <a class="navbar-brand mx-3" href="index.html" id="TitleNav">Lacteos Tigre</a>
+          
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+      </button>
 
-		<div class="img-contenedor">
-				<img class="ofertas-img" src="../img/Oferta I.jpg" alt="Ofertas">
-				<img class="ofertas-img" src="../img/Oferta I.jpg" alt="Ofertas">
-				<img class="ofertas-img" src="../img/Oferta I.jpg" alt="Ofertas">
-				<img class="ofertas-img" src="../img/Oferta II.jpg" alt="Ofertas">
-				<img class="ofertas-img" src="../img/Oferta I.jpg" alt="Ofertas">
-				<img class="ofertas-img" src="../img/Oferta I.jpg" alt="Ofertas">
-				<img class="ofertas-img" src="../img/Oferta I.jpg" alt="Ofertas">
-				<img class="ofertas-img" src="../img/Oferta II.jpg" alt="Ofertas">
-				<img class="ofertas-img" src="../img/Oferta I.jpg" alt="Ofertas">
-				<img class="ofertas-img" src="../img/Oferta II.jpg" alt="Ofertas">
-			</div>
-	</div>
+         <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+              <a class="nav-link animate " aria-current="page" href="../Index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+              <a class="nav-link animate" href="../Ofertas/ofertas.html">Ofertas</a>
+              </li>
+                <li class="nav-item">
+              <a class="nav-link animate" href="../Nosotros/Nosotros.html">Nosotros</a>
+              </li>
+                <li class="nav-item">
+              <a class="nav-link animate" href="../sucursales/sucursales.hmtl">Sucursales</a>
+              </li>
+                <li class="nav-item">
+              <a class="nav-link animate" href="../contacto/contacto.hmtl">Contacto</a>
+              </li>
+            </ul>
+    </div>
+  </div>
+</nav>
+
+    <!-- termina nav -->
+
+    <!-- inicia carrousel ofertas -->
+
+    <div id="carouselExampleIndicators" class="carousel slide mx-2 my-2 px-1 mb-1 pb-1 carousel" data-bs-ride="carousel">
+    <h2>OFERTAS DE JUNIO</h2>
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="../img/OfertaV1-1.jpg " class="d-block w-100" alt="oferta I">
+        </div>
+        <div class="carousel-item">
+          <img src="../img/Oferta v2.jpg" class="d-block w-100" alt="oferta II">
+        </div>
+        <div class="carousel-item">
+          <img src="../img/OfertaV1-1.jpg" class="d-block w-100" alt="oferta III">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+   <!-- termina carrousel ofertas -->
+
+
+ 	<!-- Inicia main secon pag ofertas media queri--> 
+ 	<main>
+ 		<section class="container-fuid CarouselSecon mt-3 mb-3">
+ 			<h2 class="TitleOfertas my-4">OFERTAS DE JUNIO</h2>
+ 			<div class="row">
+ 				<article class="col sm-12 col md-6 col lg-3 mb-5 pb-5 ImgOfertas">
+ 	             <img class="ofertas-img" src="../img/OfertaV1-1.jpg" alt="Ofertas">
+                 <img class="ofertas-img" src="../img/OfertaV1-1.jpg" alt="Ofertas">
+                 <img class="ofertas-img" src="../img/OfertaV1-1.jpg" alt="Ofertas">
+                 <img class="ofertas-img" src="../img/OfertaV1-1.jpg" alt="Ofertas">
+                 <img class="ofertas-img" src="../img/OfertaV1-1.jpg" alt="Ofertas">
+                 <img class="ofertas-img" src="../img/OfertaV1-1.jpg" alt="Ofertas">
+                 <img class="ofertas-img" src="../img/OfertaV1-1.jpg" alt="Ofertas">
+                 <img class="ofertas-img" src="../img/OfertaV1-1.jpg" alt="Ofertas">
+                 <img class="ofertas-img" src="../img/OfertaV1-1.jpg" alt="Ofertas">
+
+      		    </article>
+ 			</div>
+ 		</section>
+    </main>
+ 	<!-- termina main -->
+  
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+
+<!-- footer -->
 	
-		<footer id="pie" class="text-center"> <img src="../img/logo facebook.png" alt="contacto facebook">
-			<img src="../img/WhatsApp.png" alt="contacto WhatsApp">
-			</footer>
-	
-			<footer  id="pie" class="text-center text-bold">Lateos Tigre S.R.L y su logo son marcas registradas de Lateos Tigre S.R.L Copyrigth 2020 @ todos los derechos reservados
-			Lateos Tigre S.R.L - 30-71731258-5
-			Domicilio legal: Carlos Pellegrini 1163, piso 13, Caba
-			</footer>
-	</div>
-</body>
+		<footer id="pie" class="text-center text-ligth color-text mt-5"> <img src="../img/logo facebook.png" alt="contacto facebook">
+   			 <img src="../img/WhatsApp.png" alt="contacto WhatsApp">
+       </footer>
 
+   		 <footer id="pie" class="text-center text-ligth color-text">Lateos Tigre S.R.L y su logo son marcas registradas de Lateos Tigre S.R.L Copyrigth 2020 @ todos los derechos reservados
+   		    Lateos Tigre S.R.L - 30-71731258-5
+    		Domicilio legal: Carlos Pellegrini 1163, piso 13, Caba
+   	   </footer>
+
+	</body>
+  </div>
 </html>

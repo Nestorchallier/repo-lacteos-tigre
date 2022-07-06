@@ -5,92 +5,100 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Lacteos tigre-Distribuidora y Autoservicio</title>
     <link rel="shortcut icon" href="../img/favicon.png">
-        <!--mi css externo-->
-    <link rel="stylesheet" href="../Styles/style.css">
+  <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
-</head>
+    <!--CSS BOOTSTRAP-->
+    <link rel="stylesheet" href="../style css/style-bootstrap.css">
 
-<body>
-	<nav id="nav">
-		<div>
-			<a href="../index.html">
-			<img src="../img/logo-v2.png" alt="logo de Lacteos tigre-Distribuidora y Autoservicio">
-			</a>
-		</div>
+ </head>
+     <body>
 
-		<h1>Lacteos Tigre</h1>
-		<ul>
-      <li>	
-				<a href="../index.html" class="animate">Inicio</a>
-			</li>
-			<li>	
-				<a href="../Ofertas/Ofertas.html" class="animate">Ofertas</a>
-			</li>
-			<li>
-				<a href="../Nosotros/Nosotros.html" class="animate">Nosotros</a>
-			</li>
-			<li>
-				<a href="../Contacto/Contacto.html" class="animate">Contacto</a>
-			</li>
-			<li>
-				<a href="../Sucursales/Sucursales.html" class="animate">Sucursales</a>
-			</li>
-		</ul>
-	</nav>
+      <!-- inicia nav -->
 
-      
-	
-		<main id="main">	
-			
-			<h2>Querés ser nuestro cliente</h2>
-      <h3>Completá el formulario, te contestaremos a la brevedad.</h3>
+      <nav class="navbar navbar-expand-md navbar-light bg-light">
+        <div class="container-fluid">
 
-			<section class="contenedor-contacto">
-                <form class="form" action="envio.php">
-                     <label for="nombre">Nombre</label> 
-                     <input type="text" id="nombre" placeholder="Nestor challier">
-                     <label for="email">Email</label>
-                     <input type="text" id="email" placeholder="email@email.com">
-                     <label for="numero">Numero</label>
-                     <input type="number" id="numero" placeholder="11-2233-4455"> 
-                </form>
+        <a href="../index.html">
+        <img class="mx-3 m" src="../img/logo-v2.png" alt="logo compania"></a>
+          <a class="navbar-brand mx-3" href="../index.html" id="TitleNav">Lacteos Tigre</a>
+          
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+      </button>
 
-                <fieldset class="fieldset-zona">
-                    <h3>De donde sos ?</h3>
+         <div class="collapse navbar-collapse" id="navbarSupportedContent">
 
-                    <label for="Zona norte">Zona norte</label>
-                    <input type="radio" id="Zona norte" name="zona">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+              <a class="nav-link animate" aria-current="page" href="../Index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+              <a class="nav-link animate" href="../Ofertas/ofertas.html">Ofertas</a>
+              </li>
+                <li class="nav-item">
+              <a class="nav-link animate" href="../Nosotros/Nosotros.html">Nosotros</a>
+              </li>
+                <li class="nav-item">
+              <a class="nav-link animate" href="../Sucursales/Sucursales.html">Sucursales</a>
+              </li>
+                <li class="nav-item">
+              <a class="nav-link animate" href="../Contacto/Contacto.html">Contacto</a>
+              </li>
+            </ul>
+    </div>
+  </div>
+</nav>
 
-                    <label for="Zona sur">Zona sur</label>
-                    <input type="radio" id="Zona sur" name="zona">
+  <!-- termina nav -->
 
-                    <label for="Zona oeste">Zona oeste</label>
-                    <input type="radio" id="Zona oeste" name="zona">
-                </fieldset>
-								
-                    <fieldset class="fieldset-mensaje">
-                        <label for="mensaje">Deje su mensaje</label>
-                        
-                        <textarea name="" id="mensaje" cols="30" rows="10" placeholder="mensaje">
-												</textarea>
+      <!--inicia main -->
+	<main>
+		<h2>Querés ser nuestro cliente</h2>
+     	 <div id="main">
+		<form class="px-4 my-5 pt-2 FormContacto">
+  			<div class="mb-3">
+  			  <label for="exampleInputEmail1" class="form-label">Email</label>
+   				 <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+   		  		 <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+			 </div>
 
-                        <input type="reset" value="Cancelar">
-                        <input type="submit" value="Enviar"> 
-                       </fieldset>
-									
-            </section>
-						
+ 			 	<div class="form-floating">
+  					<textarea class="form-control FormComentario" placeholder="Leave a comment here" id="	floatingTextarea2">
+  				  </textarea>
+			 	 <label for="floatingTextarea2">Comentario</label>
+			  </div>
+
+				<select class="form-select mt-3" aria-label="Default select example">
+				  <option selected>Seleccione una zona</option>
+				  <option value="1">Zona norte</option>
+				  <option value="2">Zona sur</option>
+			      <option value="3">Zona oeste</option>
+			    </select>
+
+ 			 	<div class="my-4  form-check">
+ 			   <input type="checkbox" class="form-check-input" id="exampleCheck1">
+ 		      <label class="form-check-label" for="exampleCheck1">Decea recivir nuentro catalogo</label>
+ 			 </div>
+
+ 			 <button type="submit" class="btn btn-enviar">Enviar</button>
+ 			 <button type="reset" class="btn btn-cancelar">Cancelar</button>
+			</form>
 		</main>
-	
-		<footer id="pie" class="text-center"> <img src="../img/logo facebook.png" alt="contacto facebook">
-			<img src="../img/WhatsApp.png" alt="contacto WhatsApp">
-			</footer>
-	
-			<footer id="pie" class="text-center text-bold">Lateos Tigre S.R.L y su logo son marcas registradas de Lateos Tigre S.R.L Copyrigth 2020 @ todos los derechos reservados
-			Lateos Tigre S.R.L - 30-71731258-5
-			Domicilio legal: Carlos Pellegrini 1163, piso 13, Caba
-			</footer>
+	</div>
+      <!--termina main -->
 
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+		<footer id="pie" class="text-center text-ligth color-text mt-5"> <img src="../img/logo facebook.png" alt="contacto facebook">
+   		 <img src="../img/WhatsApp.png" alt="contacto WhatsApp">
+    	</footer>
+
+      	 <footer id="pie" class="text-center text-ligth color-text">Lateos Tigre S.R.L y su logo son marcas registradas de Lateos Tigre S.R.L Copyrigth 2020 @ todos los derechos reservados
+         Lateos Tigre S.R.L - 30-71731258-5
+         Domicilio legal: Carlos Pellegrini 1163, piso 13, Caba
+       </footer>
 
 </body>
 
