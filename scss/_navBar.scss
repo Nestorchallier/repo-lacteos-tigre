@@ -1,0 +1,14 @@
+// ANIDACIÓN
+
+#TitleNav{
+  font-size: $textLg;
+  font-family: $fontSecondary;
+  box-shadow: 5px 5px 5px 5px rgba(53, 50, 50, 0.187);
+  border-radius: 10px;
+  margin-left: 20px
+}
+
+#main {
+  background-color: $mainColor;
+  width: 300px;
+}

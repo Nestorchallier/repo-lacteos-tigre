@@ -1,0 +1,41 @@
+// FONTS 
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Tiro+Devanagari+Marathi:ital@0;1&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500&display=swap');
+
+/*medida HTML*/
+
+
+// FONTS WEIGTH
+
+$bold: 500;
+$regular: 400;
+$light: 300;
+
+//TEXT SIZING
+$textSs: 0.7em;
+$textSm: 1.2em;
+$textMd: 1.5em;
+$textMx: 1.7em;
+$textLg: 2.5em;
+$textXl: 3.5em;
+$textXXl:5em;
+
+$fontPrimari:  'Roboto', sans-serif;
+$fontSecondary: 'Nunito', sans-serif;
+
+//CLASES DE TEXTO
+
+.text-center {
+  text-align: center;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-rigth {
+  text-align: right;
+}

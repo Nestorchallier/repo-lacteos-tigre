@@ -1,0 +1,182 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Tiro+Devanagari+Marathi:ital@0;1&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500&display=swap");
+/*medida HTML*/
+.text-center {
+  text-align: center; }
+
+.text-left {
+  text-align: left; }
+
+.text-rigth {
+  text-align: right; }
+
+#TitleNav {
+  font-size: 2.5em;
+  font-family: "Nunito", sans-serif;
+  box-shadow: 5px 5px 5px 5px rgba(53, 50, 50, 0.187);
+  border-radius: 10px;
+  margin-left: 20px; }
+
+#main {
+  background-color: #dfdfdf;
+  width: 300px; }
+
+.nav-link {
+  box-shadow: 0.5px 0.5px 0.5px 0.5px rgba(53, 50, 50, 0.187);
+  border-radius: 10px; }
+
+body {
+  background-image: url("../img/5437842.jpg"); }
+
+h1,
+h2,
+h3 {
+  font-family: 'Roboto', sans-serif;
+  animation-name: textAlpha;
+  animation-duration: 2s; }
+
+h2, h3 {
+  font-size: 1.7em;
+  display: flex;
+  justify-content: center;
+  padding: 25px;
+  margin-top: 50px;
+  color: #BD2A2E;
+  background-color: rgba(16, 16, 16, 0.885);
+  margin-left: 20%;
+  margin-right: 20%;
+  border-radius: 10px; }
+
+.row {
+  animation-name: textAlpha;
+  animation-duration: 2s; }
+
+.text-inicio {
+  width: 80%;
+  margin-left: 10%;
+  text-align: center;
+  box-shadow: 5px 5px 5px 5px rgba(53, 50, 50, 0.541);
+  border-radius: 10px; }
+
+.ImgOfertas {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 3%;
+  justify-content: space-around;
+  justify-content: space-evenly;
+  box-shadow: 5px 5px 5px 5px rgba(53, 50, 50, 0.631);
+  border-radius: 10px; }
+
+.form-control {
+  height: 30px; }
+
+.FormContacto {
+  display: grid;
+  justify-items: start;
+  align-items: start; }
+
+.form-select {
+  width: 20%; }
+
+.FormComentario {
+  width: 250px; }
+
+.form-select {
+  width: 250px; }
+
+.btn-enviar {
+  background-color: #265C4B;
+  color: whitesmoke; }
+
+.btn-cancelar {
+  background-color: #555252;
+  color: whitesmoke; }
+
+.carousel {
+  margin-bottom: 500px; }
+
+.ofertas-img {
+  margin-bottom: 80px; }
+
+.animate:hover {
+  cursor: pointer;
+  color: whitesmoke;
+  background-color: #dfdfdf;
+  border: solid 3px rgba(16, 16, 16, 0.885); }
+
+@keyframes textAlpha {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
+.color-ligth {
+  background-color: #dfdfdf;
+  border-radius: 10px; }
+
+.color-background {
+  background-color: #ccf3d5; }
+
+.color-dark {
+  background-color: rgba(16, 16, 16, 0.885); }
+
+.color-text {
+  background-color: #555252;
+  color: whitesmoke; }
+
+@media only screen and (min-width: 756px) {
+  .carousel {
+    display: none !important; } }
+
+@media only screen and (max-width: 755px) {
+  .CarouselSecon {
+    display: none !important; }
+  h2 h3 {
+    font-size: 5em;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+    margin-top: 25px;
+    color: #BD2A2E;
+    background-color: #272323;
+    margin-left: 1%;
+    margin-right: 6%;
+    border-radius: 6px;
+    margin: 15px auto 30px auto; }
+  p {
+    width: 70%;
+    margin-left: 10%;
+    text-align: center;
+    font-size: 1.2em;
+    line-height: 2.5em; }
+  #pie {
+    font-size: 0.7em;
+    line-height: 1.5em; } }
+
+@media only screen and (max-width: 500px) {
+  .CarrouselSecon {
+    display: none !important; }
+  h2 {
+    margin: auto;
+    width: 200px;
+    margin-bottom: 30px; }
+  #TitleNav {
+    display: none !important; }
+  h3 {
+    font-size: 1.2em;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    justify-content: center;
+    color: #BD2A2E;
+    background-color: #272323;
+    margin-left: 1%;
+    margin-right: 6%;
+    border-radius: 6px;
+    margin: 15px auto 30px auto; }
+  .ImgNosotros {
+    width: 100% !important;
+    margin: 0 !important;
+    margin-bottom: 20px !important;
+    padding: 0 !important; } }
