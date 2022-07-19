@@ -1,9 +1,13 @@
-
-@import "_vars";
+//IMPORT
+@import "utilities/_vars";
 @import "_fonts";
 @import "_navBar";
 @import "_links";
+@import "utilities/_extend";
+@import "utilities/_mixin";
+@import "utilities/map";
 
+// GENERAL
 
 body{
   background-image: url("../img/5437842.jpg");
@@ -11,47 +15,40 @@ body{
 
 h1,
 h2,
-h3 {
-  font-family: 'Roboto', sans-serif;
-  animation-name: textAlpha;
-  animation-duration: 2s;
+h3,
+row {
+  font-family:$fontPrimari;
+  @extend %animation;
 }
 
 h2, h3{
   font-size: $textMx;
-  display: flex;
-  justify-content: center;
-  padding: 25px;
-  margin-top: 50px;
-  color: $textColor2;
-  background-color: $colorDark;
-  margin-left: 20%;
-  margin-right: 20%;
-  border-radius: 10px;
+  @include flex-H2-H3(flex, center);
+  @extend %textH2-H3;
 }
 
-
-.row {
-  animation-name: textAlpha;
-  animation-duration: 2s;
-}
 
 .text-inicio {
   width: 80%;
-  margin-left: 10%;
+  margin-left: map-get($map: $estilos, $key:margin-left );
   text-align: center;
-  box-shadow: 5px 5px 5px 5px rgba(53, 50, 50, 0.541);
+  box-shadow: map-get($map: $estilos, $key:box-shadow );
+  border-radius: map-get($map: $estilos, $key:border-radius );
+}
+//IMG DE OFERTAS SIN @MEDIA
+.ImgOfertas {
+  @include flex (flex, wrap, space-around, space-evenly);
+  margin: 3%;
+  box-shadow: map-get($map: $estilos, $key: box-shadow);
   border-radius: 10px;
 }
 
-.ImgOfertas {
-  display: flex;
-  flex-wrap: wrap;
-  margin: 3%;
-  justify-content: space-around;
-  justify-content: space-evenly;
-  box-shadow: 5px 5px 5px 5px rgba(53, 50, 50, 0.631);
-  border-radius: 10px;
+// FORMULARIO CONTACTO
+
+.imgContacto{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
 }
 
 .form-control {
@@ -59,9 +56,7 @@ h2, h3{
 }
 
 .FormContacto {
-  display: grid;
-  justify-items: start;
-  align-items: start;
+  @include grid (grid, start, start)
 }
 
 .form-select {
@@ -77,6 +72,8 @@ h2, h3{
   width: 250px;
 }
 
+//COLORES BOTONES
+
 .btn-enviar {
   background-color: $colorbtn;
   color: $textColor;
@@ -87,6 +84,7 @@ h2, h3{
   color: $textColor;
 }
 
+//DIMENCIONES CAROUSEL
 .carousel {
   margin-bottom: 500px;
 }
@@ -114,6 +112,8 @@ h2, h3{
     opacity: 1;
   }
 }
+
+//COLOR BKG 
 .color-ligth {
   background-color: $mainColor;
   border-radius: 10px;
@@ -132,26 +132,29 @@ h2, h3{
   color: $textColor;
 }
 
+//@MEDIA
 @media only screen and (min-width: 756px) {
   .carousel {
     display: none !important;
   }
+  
 }
 
 @media only screen and (max-width: 755px) {
   .CarouselSecon {
     display: none !important;
   }
+  
 
   h2 h3 {
     font-size: $textXXl;
-    font-family: 'Roboto', sans-serif;
+    font-family: $fontPrimari;
     display: flex;
     justify-content: center;
     padding: 15px;
     margin-top: 25px;
-    color: #BD2A2E;
-    background-color: rgba(39, 35, 35, 80%);
+    color: $textColor2;
+    background-color: $colorBkgH3;
     margin-left: 1%;
     margin-right: 6%;
     border-radius: 6px;
@@ -189,11 +192,11 @@ h2, h3{
 
   h3 {
     font-size:$textSm;
-    font-family: 'Roboto', sans-serif;
+    font-family: $fontPrimari;
     display: flex;
     justify-content: center;
-    color: #BD2A2E;
-    background-color: rgba(39, 35, 35, 80%);
+    color: $textColor2;
+    background-color: $colorBkgH3;
     margin-left: 1%;
     margin-right: 6%;
     border-radius: 6px;
@@ -205,5 +208,10 @@ h2, h3{
     margin-bottom: 20px !important;
     padding: 0 !important;
 
+  }
+}
+@media only screen and (max-width: 800px){
+  .imgMedia {
+    display: none !important;
   }
 }

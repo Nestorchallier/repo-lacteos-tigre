@@ -1,7 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Tiro+Devanagari+Marathi:ital@0;1&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500&display=swap");
-/*medida HTML*/
 .text-center {
   text-align: center; }
 
@@ -26,20 +25,7 @@
   box-shadow: 0.5px 0.5px 0.5px 0.5px rgba(53, 50, 50, 0.187);
   border-radius: 10px; }
 
-body {
-  background-image: url("../img/5437842.jpg"); }
-
-h1,
-h2,
-h3 {
-  font-family: 'Roboto', sans-serif;
-  animation-name: textAlpha;
-  animation-duration: 2s; }
-
 h2, h3 {
-  font-size: 1.7em;
-  display: flex;
-  justify-content: center;
   padding: 25px;
   margin-top: 50px;
   color: #BD2A2E;
@@ -48,9 +34,24 @@ h2, h3 {
   margin-right: 20%;
   border-radius: 10px; }
 
-.row {
+h1, h2, h3,
+row {
   animation-name: textAlpha;
   animation-duration: 2s; }
+
+body {
+  background-image: url("../img/5437842.jpg"); }
+
+h1,
+h2,
+h3,
+row {
+  font-family: "Roboto", sans-serif; }
+
+h2, h3 {
+  font-size: 1.7em;
+  display: flex;
+  justify-content: center; }
 
 .text-inicio {
   width: 80%;
@@ -62,11 +63,16 @@ h2, h3 {
 .ImgOfertas {
   display: flex;
   flex-wrap: wrap;
-  margin: 3%;
   justify-content: space-around;
   justify-content: space-evenly;
-  box-shadow: 5px 5px 5px 5px rgba(53, 50, 50, 0.631);
+  margin: 3%;
+  box-shadow: 5px 5px 5px 5px rgba(53, 50, 50, 0.541);
   border-radius: 10px; }
+
+.imgContacto {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-around; }
 
 .form-control {
   height: 30px; }
@@ -134,7 +140,7 @@ h2, h3 {
     display: none !important; }
   h2 h3 {
     font-size: 5em;
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
     display: flex;
     justify-content: center;
     padding: 15px;
@@ -166,7 +172,7 @@ h2, h3 {
     display: none !important; }
   h3 {
     font-size: 1.2em;
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
     display: flex;
     justify-content: center;
     color: #BD2A2E;
@@ -180,3 +186,7 @@ h2, h3 {
     margin: 0 !important;
     margin-bottom: 20px !important;
     padding: 0 !important; } }
+
+@media only screen and (max-width: 800px) {
+  .imgMedia {
+    display: none !important; } }

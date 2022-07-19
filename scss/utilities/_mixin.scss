@@ -1,0 +1,17 @@
+//MIXIN
+
+@mixin flex($display, $wrap, $content, $content2) {
+  display: $display;
+  flex-wrap: $wrap;
+  justify-content: $content;
+  justify-content: $content2;
+}
+@mixin grid($display, $start, $starAling) {
+  display: $display;
+  justify-items: $start;
+  align-items: $starAling;
+}
+@mixin flex-H2-H3($display, $content){
+  display: $display;
+  justify-content: $content;
+}

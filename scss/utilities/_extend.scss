@@ -1,0 +1,15 @@
+//EXTEND usados para los textos, h1 h2 h3 y animaciones. 
+%textH2-H3{
+    padding: 25px;
+    margin-top: 50px;
+    color: $textColor2;
+    background-color: $colorDark;
+    margin-left: 20%;
+    margin-right: 20%;
+    border-radius: 10px;
+}
+
+%animation{
+    animation-name: textAlpha;
+    animation-duration: 2s;
+}
